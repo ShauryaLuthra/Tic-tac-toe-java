@@ -1,68 +1,58 @@
 # Tic Tac Toe (Java Swing)
 
-A simple **Tic Tac Toe** game built in **Java** using **Swing** for the GUI.
+A **Tic Tac Toe** game built in **Java** using **Swing** for the GUI.  
+The project includes both a **classic 2-player mode** and a **single-player AI mode** powered by the **Minimax algorithm**.
+
+---
 
 ## Features
 
-* 2-player game (X vs O)
-* Turn indicator
-* Win detection (rows, columns, diagonals)
-* Tie detection
-* Clean GUI with color feedback for win/tie
+### Classic Mode
+- 2-player game (X vs O)
+- Turn indicator
+- Win detection (rows, columns, diagonals)
+- Tie detection
+- Simple Swing-based GUI
+
+### AI Mode
+- Human (X) vs AI (O)
+- AI uses the Minimax algorithm
+- Depth-aware evaluation (faster wins, delayed losses)
+- AI cannot be beaten (draw or loss at best)
+- Reset button to replay without restarting the app
+
+---
 
 ## Requirements
 
-* Java JDK 8 or higher
+- Java JDK 8 or higher
 
 Check your Java version:
 
 ```bash
 java -version
-```
 
-## How to Run
-
-Clone the repository:
-
-```bash
+# Clone the repository
 git clone https://github.com/ShauryaLuthra/Tic-tac-toe-java.git
-cd ic-tac-toe-java
-```
+cd Tic-tac-toe-java
 
-Compile the program:
+# Compile the code
+javac App.java TicTacToe.java TicTacToeAI.java
 
-```bash
-javac App.java TicTacToe.java
-```
+# Run the game
 
-Run the game:
-
-```bash
+# Using launcher (recommended)
 java App
-```
 
-## Project Structure
+# Classic 2-player mode directly
+java TicTacToe
 
-```
+# AI mode directly
+java TicTacToeAI
+
 .
-├── App.java          # Entry point
-├── TicTacToe.java    # Game logic and UI
-├── .gitignore        # Ignores compiled .class files
+├── App.java            # Entry point / launcher
+├── TicTacToe.java      # 2-player version
+├── TicTacToeAI.java    # AI version (Minimax)
+├── .gitignore          # Ignores .class files
 └── README.md
-```
-
-## Notes
-
-* `.class` files are intentionally ignored using `.gitignore`
-* Built as a learning project using Java Swing
-
-## Possible Improvements
-
-* Restart button
-* Single-player mode (AI)
-* Score tracking
-* Better UI styling
-
----
-
-Created by **Shaurya Luthra**
